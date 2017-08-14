@@ -1,0 +1,17 @@
+def IsFibonacci(i:Int):Boolean={
+var curr=1
+var pre=0
+var res=0
+var flag=true
+for (e<-1 to i){
+if(curr!=1 && curr%i==0) 
+{flag=true
+return flag}
+else if(curr<=i){
+res=pre+curr
+pre=curr
+curr=res
+flag=false}
+}
+return flag
+}
